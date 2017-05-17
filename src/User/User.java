@@ -1,6 +1,7 @@
 package User;
 
 public class User {
+    static int count = 0;
     private String name;
     private String password;
     private String firstName;
@@ -13,6 +14,7 @@ public class User {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        count++;
     }
 
     public String getName() {
@@ -59,7 +61,7 @@ public class User {
         StringBuilder builder = new StringBuilder();
         System.out.println(builder.append('<').append(this.getName()).append(" ").append(this.getFirstName()).append(" ")
                 .append(this.getLastName()).append(" ").append(this.getEmail()).append(" ").append(this.getPassword())
-                .append(">"));
+                .append(">").append(" User number ").append(count));
 
     }
 }
