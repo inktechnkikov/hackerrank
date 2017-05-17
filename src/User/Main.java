@@ -6,5 +6,7 @@ public class Main {
         user.setName("Momo");
         user.setPassword("2356");
         user.printInfo();
+
+        User user1 = new User("Gogo","pass","Georgi","Atanasov","mail.bg");
     }
 }
