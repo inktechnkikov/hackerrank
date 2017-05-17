@@ -8,5 +8,6 @@ public class Main {
         user.printInfo();
 
         User user1 = new User("Gogo","pass","Georgi","Atanasov","mail.bg");
+        user1.printInfo();
     }
 }
